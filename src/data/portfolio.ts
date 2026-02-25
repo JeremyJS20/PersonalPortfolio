@@ -124,7 +124,7 @@ export const portfolioData = {
                 es: "Una plataforma de mensajería en tiempo real diseñada para una comunicación fluida. Construida con un stack moderno para garantizar interacciones de baja latencia y una experiencia de usuario receptiva."
             },
             image: "/projects/ChatApp.webp",
-            tags: ["ReactJS", "TypeScript", "Express.js", "MongoDB", "TailwindCSS", "Socket.IO"],
+            tags: ["ReactJS", "TypeScript", "Express.js", "MongoDB", "TailwindCSS"],
             links: {
                 code: "https://github.com/JeremyJS20/ReactChatApp2",
                 preview: "https://react-chat-app-6vjz.onrender.com"
@@ -168,14 +168,6 @@ export const portfolioData = {
             logo: {
                 light: "https://svgl.app/library/mongodb-icon-light.svg",
                 dark: "https://svgl.app/library/mongodb-icon-dark.svg"
-            }
-        },
-        {
-            name: "Socket.io",
-            icon: "MessageCircle",
-            logo: {
-                light: "https://svgl.app/library/socketio-icon-light.svg",
-                dark: "https://svgl.app/library/socketio-icon-dark.svg"
             }
         }
     ]
