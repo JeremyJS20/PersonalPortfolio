@@ -1,0 +1,51 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { portfolioData } from "@/data/portfolio";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { summary, aboutImage } = portfolioData;
+---
+
+<section class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center" id="about">
+    <div class="md:col-span-1 flex justify-center md:justify-start">
+        <div class="relative group max-w-xs mx-auto md:mx-0">
+            <div
+                class="absolute -inset-1 bg-gradient-to-r from-primary to-teal-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+            >
+            </div>
+            <div
+                class="relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl"
+            >
+                <img
+                    src={aboutImage}
+                    alt="About Me Portrait"
+                    class="w-full h-auto aspect-[3/4] object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="md:col-span-2 space-y-6">
+        <div class="space-y-2">
+            <h2 class="text-3xl font-bold dark:text-white">
+                {t("about.title")}
+            </h2>
+            <div class="h-1.5 w-12 bg-primary rounded-full"></div>
+        </div>
+        <div class="space-y-4">
+            {
+                summary[lang]
+                    .split("\n\n")
+                    .map((paragraph) => (
+                        <p
+                            class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
+                            set:html={paragraph}
+                        />
+                    ))
+            }
+        </div>
+    </div>
+</section>

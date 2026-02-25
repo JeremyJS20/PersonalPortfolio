@@ -1,0 +1,80 @@
+---
+import ThemeToggle from "@/components/ui/ThemeToggle.astro";
+import LanguagePicker from "@/components/ui/LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-auto">
+  <div
+    class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-white/20 dark:border-slate-800 rounded-full px-4 py-2 flex items-center gap-4 lg:gap-6 shadow-lg"
+  >
+    <a
+      class="nav-link text-[10px] lg:text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-primary transition-colors"
+      href="#experience">{t("nav.experience")}</a
+    >
+    <a
+      class="nav-link text-[10px] lg:text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-primary transition-colors"
+      href="#projects">{t("nav.projects")}</a
+    >
+
+    <a
+      class="nav-link text-[10px] lg:text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-primary transition-colors"
+      href="#about">{t("nav.about")}</a
+    >
+    <a
+      class="nav-link text-[10px] lg:text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-primary transition-colors"
+      href="#hero">{t("nav.contact")}</a
+    >
+
+    <div
+      class="flex items-center gap-2 border-l border-slate-200 dark:border-slate-800 pl-4 lg:ml-[-8px]"
+    >
+      <LanguagePicker />
+      <ThemeToggle />
+    </div>
+  </div>
+</nav>
+
+<script>
+  const observerOptions = {
+    root: null,
+    rootMargin: "-5% 0px -90% 0px",
+    threshold: 0,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    // We only care about entries that ARE intersecting
+    const intersecting = entries.filter((e) => e.isIntersecting);
+    if (intersecting.length === 0) return;
+
+    // Of the intersecting ones, find the one that is currently "in focus"
+    // Usually the one whose top is closest to our target zone
+    const active = intersecting.reduce((prev, curr) => {
+      return Math.abs(curr.boundingClientRect.top) <
+        Math.abs(prev.boundingClientRect.top)
+        ? curr
+        : prev;
+    });
+
+    const id = active.target.getAttribute("id");
+    const navLink = document.querySelector(`.nav-link[href="#${id}"]`);
+
+    if (navLink) {
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.classList.remove("text-primary", "dark:text-primary");
+        link.classList.add("text-slate-700", "dark:text-slate-300");
+      });
+
+      navLink.classList.add("text-primary", "dark:text-primary");
+      navLink.classList.remove("text-slate-700", "dark:text-slate-300");
+    }
+  }, observerOptions);
+
+  // Monitor sections
+  document.querySelectorAll("section[id]").forEach((section) => {
+    observer.observe(section);
+  });
+</script>

@@ -1,0 +1,26 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Navbar from "@/components/features/Navbar.astro";
+import Hero from "@/components/features/Hero.astro";
+import Experience from "@/components/features/Experience.astro";
+import Projects from "@/components/features/Projects.astro";
+import About from "@/components/features/About.astro";
+import Skills from "@/components/features/Skills.astro";
+import Education from "@/components/features/Education.astro";
+import Footer from "@/components/features/Footer.astro";
+import { portfolioData } from "@/data/portfolio";
+---
+
+<BaseLayout
+    title={`${portfolioData.name} | Portfolio de Desarrollador Fullstack`}
+    lang="es"
+>
+    <Navbar />
+    <Hero />
+    <Experience />
+    <Projects />
+    <Skills />
+    <!-- <Education /> -->
+    <About />
+    <Footer slot="footer" />
+</BaseLayout>

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Enable class-based dark mode in Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stitch Design Variables */
+  --color-primary: #0d9488;
+  --color-primary-hover: #0f766e;
+
+  --color-background-light: #F8FAFC;
+  --color-background-dark: #0F172A;
+
+  --color-slate-900: #0F172A;
+  --color-slate-100: #F1F5F9;
+
+  --color-pfm-bg-light: var(--color-background-light);
+  --color-pfm-bg-dark: var(--color-background-dark);
+
+  --color-pfm-surface-light: #FFFFFF;
+  --color-pfm-surface-dark: #1E293B;
+  /* Updated to better blend with dark background */
+
+  --color-pfm-text-main-light: var(--color-slate-900);
+  --color-pfm-text-main-dark: var(--color-slate-100);
+
+  --color-pfm-text-muted-light: #475569;
+  /* Slate 600 */
+  --color-pfm-text-muted-dark: #94A3B8;
+  /* Slate 400 */
+
+  --color-pfm-border-light: #E2E8F0;
+  /* Slate 200 */
+  --color-pfm-border-dark: #1E293B;
+  /* Slate 800 */
+
+  --color-pfm-danger: #EF4444;
+  --color-pfm-success: #10B981;
+
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: "Public Sans", sans-serif;
+}
+
+/* Base styles to apply theme variables based on minimal dark mode setup */
+@layer base {
+  :root {
+    --pfm-bg: var(--color-pfm-bg-light);
+    --pfm-bg-gradient-start: #e0f2f1;
+    --pfm-surface: var(--color-pfm-surface-light);
+    --pfm-text-main: var(--color-pfm-text-main-light);
+    --pfm-text-muted: var(--color-pfm-text-muted-light);
+    --pfm-border: var(--color-pfm-border-light);
+  }
+
+  .dark {
+    --pfm-bg: var(--color-pfm-bg-dark);
+    --pfm-bg-gradient-start: #134e4a;
+    --pfm-surface: var(--color-pfm-surface-dark);
+    --pfm-text-main: var(--color-pfm-text-main-dark);
+    --pfm-text-muted: var(--color-pfm-text-muted-dark);
+    --pfm-border: var(--color-pfm-border-dark);
+  }
+
+  body {
+    background-color: var(--pfm-bg);
+    background-image:
+      radial-gradient(circle at 0% 0%, var(--pfm-bg-gradient-start) 0%, transparent 20%),
+      radial-gradient(circle at 100% 0%, var(--pfm-bg-gradient-start) 0%, transparent 20%);
+    background-attachment: scroll;
+    color: var(--pfm-text-main);
+    min-height: 100vh;
+  }
+
+  /* Scroll margin for fixed navbar clearance */
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+}

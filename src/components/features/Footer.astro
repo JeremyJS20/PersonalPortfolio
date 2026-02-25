@@ -1,0 +1,65 @@
+---
+import { Github, Mail, Linkedin } from "lucide-astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { portfolioData } from "@/data/portfolio";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { name, socials } = portfolioData;
+---
+
+<footer
+    class="mt-40 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 py-12 px-6 bg-gradient-to-t from-teal-50/50 dark:from-teal-900/10 to-white dark:to-slate-900 w-full"
+>
+    <div
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 text-center md:text-left"
+    >
+        <div class="flex flex-col gap-1">
+            <p class="text-slate-500 dark:text-slate-400 text-sm">
+                © {new Date().getFullYear()}
+                {name}. {t("footer.rights")}
+            </p>
+            <p class="text-slate-400 dark:text-slate-500 text-xs">
+                {t("footer.inspired")}
+                <a
+                    href="https://porfolio.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary/70 hover:text-primary transition-colors underline decoration-primary/20 hover:decoration-primary"
+                    >midudev</a
+                >
+            </p>
+        </div>
+
+        <div class="flex items-center gap-6">
+            <a
+                href={`mailto:${socials.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-400 hover:text-primary transition-colors"
+                aria-label="Email"
+            >
+                <Mail class="w-6 h-6" />
+            </a>
+            <a
+                href={socials.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-400 hover:text-primary transition-colors"
+                aria-label="Github"
+            >
+                <Github class="w-6 h-6" />
+            </a>
+            <a
+                href={socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-400 hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+            >
+                <Linkedin class="w-6 h-6" />
+            </a>
+        </div>
+    </div>
+</footer>

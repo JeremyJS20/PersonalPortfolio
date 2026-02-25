@@ -1,0 +1,36 @@
+---
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+import { portfolioData } from '@/data/portfolio';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { experience } = portfolioData;
+---
+
+<section class="space-y-12" id="experience">
+    <div class="space-y-2">
+        <h2 class="text-3xl font-bold dark:text-white">{t('experience.title')}</h2>
+        <div class="h-1.5 w-12 bg-primary rounded-full"></div>
+    </div>
+    
+    <div class="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 md:ml-6 space-y-12 pb-8 border-primary/30 border-l-4">
+        
+        {experience.map((item, index) => (
+            <div class="relative pl-10 p-6 rounded-xl border border-transparent mb-8">
+                <div class={`absolute top-0 w-5 h-5 rounded-full ${index === 0 ? 'bg-primary ring-4 ring-background-light dark:ring-background-dark' : 'bg-slate-300 dark:bg-slate-700 ring-4 ring-background-light dark:ring-background-dark'} -left-[12px] z-10`}></div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                    <h3 class="text-xl font-bold">{item.role[lang]}</h3>
+                    <span class={`${index === 0 ? 'text-primary font-semibold bg-primary/10' : 'text-slate-500 font-semibold bg-slate-100 dark:bg-slate-800'} px-3 py-1 rounded-full text-sm`}>
+                        {item.period[lang]}
+                    </span>
+                </div>
+                <p class="text-lg font-medium text-slate-700 dark:text-slate-300">{item.company}</p>
+                <p class="mt-3 text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
+                    {item.description[lang]}
+                </p>
+            </div>
+        ))}
+
+    </div>
+</section>

@@ -1,0 +1,74 @@
+---
+import { Code, Eye, ExternalLink } from "lucide-astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { portfolioData } from "@/data/portfolio";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { projects } = portfolioData;
+---
+
+<section class="space-y-12" id="projects">
+    <div class="space-y-2">
+        <h2 class="text-3xl font-bold dark:text-white">
+            {t("projects.title")}
+        </h2>
+        <div class="h-1.5 w-12 bg-primary rounded-full"></div>
+    </div>
+
+    <div class="flex flex-col gap-12">
+        {
+            projects.map((project) => (
+                <article class="group flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-5/12 overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md relative aspect-[4/3]">
+                        <img
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            alt={project.title}
+                            src={project.image}
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </div>
+                    <div class="w-full md:w-7/12 flex flex-col justify-center space-y-5">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-primary">
+                            {project.title}
+                        </h3>
+
+                        <div class="flex flex-wrap gap-2">
+                            {project.tags.map((tag) => (
+                                <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+
+                        <p
+                            class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg"
+                            set:html={project.description[lang]}
+                        />
+
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a
+                                href={project.links.code}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-200 px-5 py-2.5 rounded-lg text-sm font-bold flex items-center gap-2 transition-all"
+                            >
+                                <Code class="w-5 h-5" /> {t("projects.code")}
+                            </a>
+                            <a
+                                href={project.links.preview}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="border border-slate-300 dark:border-slate-700 bg-transparent hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 px-5 py-2.5 rounded-lg text-sm font-bold flex items-center gap-2 transition-all"
+                            >
+                                <Eye class="w-5 h-5" /> {t("projects.preview")}
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            ))
+        }
+    </div>
+</section>

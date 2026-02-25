@@ -1,0 +1,94 @@
+---
+import { Mail, Linkedin } from "lucide-astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { portfolioData } from "@/data/portfolio";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const {
+    name,
+    profileImage,
+    roles,
+    location,
+    tagline,
+    socials,
+    experienceYears,
+} = portfolioData;
+---
+
+<section
+    class="flex flex-col items-center text-center gap-8 pt-32 pb-10"
+    id="hero"
+>
+    <div class="flex flex-col items-center gap-6">
+        <div class="flex items-center gap-4">
+            <div
+                class="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-xl"
+            >
+                <img
+                    class="w-full h-full object-cover [object-position:48%_25%]"
+                    alt={`Professional portrait of ${name}`}
+                    src={profileImage}
+                    loading="eager"
+                    decoding="async"
+                />
+            </div>
+            <div
+                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-medium"
+            >
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                    ></span>
+                    <span
+                        class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+                    ></span>
+                </span>
+                {t("hero.available")}
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+            {t("hero.greeting")}
+            <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-teal-400"
+                >{name}</span
+            >
+        </h1>
+
+        <p
+            class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl"
+        >
+            <span class="font-semibold"
+                >{experienceYears}+ {t("hero.description_1")}</span
+            >
+            <span class="text-primary dark:text-teal-400 font-bold"
+                >{roles[lang]}</span
+            >
+            {location[lang]}.
+            <span class="opacity-80"> {tagline[lang]}</span>
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 pt-4">
+            <a
+                href={`mailto:${socials.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:opacity-90 transition-all border border-transparent"
+            >
+                <Mail class="w-5 h-5" />
+                {t("hero.contact")}
+            </a>
+            <a
+                href={socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 hover:bg-slate-100 dark:hover:bg-slate-800 px-6 py-2.5 rounded-full font-bold flex items-center gap-2 transition-all"
+            >
+                <Linkedin class="w-5 h-5" />
+                LinkedIn
+            </a>
+        </div>
+    </div>
+</section>

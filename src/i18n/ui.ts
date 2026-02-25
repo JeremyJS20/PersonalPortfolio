@@ -1,0 +1,51 @@
+export const languages = {
+    en: 'English',
+    es: 'Español',
+};
+
+export const defaultLang = 'en';
+
+export const ui = {
+    en: {
+        'nav.experience': 'Experience',
+        'nav.projects': 'Projects',
+        'nav.skills': 'Skills',
+        'nav.about': 'About',
+        'nav.contact': 'Contact',
+        'hero.available': 'Available for work',
+        'hero.greeting': 'Hey, I am',
+        'hero.contact': 'Contact me',
+        'hero.description_1': 'years of experience.',
+        'experience.title': 'Work Experience',
+        'projects.title': 'Projects',
+        'projects.code': 'Code',
+        'projects.preview': 'Preview',
+        'education.title': 'Academic Background',
+        'about.title': 'About My Journey',
+        'about.quote': 'Code is poetry written for machines to sing.',
+        'skills.title': 'Technical Arsenal',
+        'footer.rights': 'All rights reserved.',
+        'footer.inspired': 'Inspired by',
+    },
+    es: {
+        'nav.experience': 'Experiencia',
+        'nav.projects': 'Proyectos',
+        'nav.skills': 'Habilidades',
+        'nav.about': 'Sobre mí',
+        'nav.contact': 'Contacto',
+        'hero.available': 'Disponible para trabajar',
+        'hero.greeting': 'Hey, soy',
+        'hero.contact': 'Contáctame',
+        'hero.description_1': 'años de experiencia.',
+        'experience.title': 'Experiencia Laboral',
+        'projects.title': 'Proyectos',
+        'projects.code': 'Código',
+        'projects.preview': 'Previsualizar',
+        'education.title': 'Formación Académica',
+        'about.title': 'Sobre mi trayectoria',
+        'about.quote': 'El código es poesía escrita para que las máquinas canten.',
+        'skills.title': 'Arsenal Técnico',
+        'footer.rights': 'Todos los derechos reservados.',
+        'footer.inspired': 'Inspirado por',
+    },
+} as const;
