@@ -17,7 +17,6 @@
     "@types/node": "^25.3.0"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
     "@fontsource/public-sans": "^5.2.7",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.17.3",
