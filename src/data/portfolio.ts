@@ -133,7 +133,6 @@ export const portfolioData = {
     ],
     skills: [
         { name: "TypeScript", icon: "Code", logo: "https://svgl.app/library/typescript.svg" },
-        { name: "Python", icon: "Terminal", logo: "https://svgl.app/library/python.svg" },
         {
             name: "ReactJS",
             icon: "MonitorSmartphone",
@@ -152,15 +151,8 @@ export const portfolioData = {
                 dark: "https://svgl.app/library/expressjs_dark.svg"
             }
         },
+        { name: "Python", icon: "Terminal", logo: "https://svgl.app/library/python.svg" },
         { name: "FastAPI", icon: "Zap", logo: "https://svgl.app/library/fastapi.svg" },
-        {
-            name: "AWS",
-            icon: "Cloud",
-            logo: {
-                light: "https://svgl.app/library/aws_light.svg",
-                dark: "https://svgl.app/library/aws_dark.svg"
-            }
-        },
         { name: "PostgreSQL", icon: "Database", logo: "https://svgl.app/library/postgresql.svg" },
         {
             name: "MongoDB",
@@ -169,6 +161,15 @@ export const portfolioData = {
                 light: "https://svgl.app/library/mongodb-icon-light.svg",
                 dark: "https://svgl.app/library/mongodb-icon-dark.svg"
             }
+        },
+        {
+            name: "AWS",
+            icon: "Cloud",
+            logo: {
+                light: "https://svgl.app/library/aws_light.svg",
+                dark: "https://svgl.app/library/aws_dark.svg"
+            }
         }
     ]
 };
+
