@@ -1,5 +1,6 @@
 ---
 import { Mail, Linkedin } from "lucide-astro";
+import { Image } from "astro:assets";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { portfolioData } from "@/data/portfolio";
 
@@ -26,13 +27,12 @@ const {
             <div
                 class="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-xl image-placeholder"
             >
-                <img
-                    class="w-full h-full object-cover [object-position:48%_25%] image-fade-in"
+                <Image
+                    class="w-full h-full object-cover [object-position:48%_25%]"
                     alt={`Professional portrait of ${name}`}
                     src={profileImage}
                     loading="eager"
-                    decoding="sync"
-                    onload="this.style.opacity='1'"
+                    onload="this.parentElement.classList.add('loaded')"
                 />
             </div>
             <div

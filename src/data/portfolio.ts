@@ -1,7 +1,14 @@
+import HeroProfile from "@/assets/projects/HeroProfile.webp";
+import AboutMe from "@/assets/projects/AboutMe.webp";
+import FinOrbit from "@/assets/projects/FinOrbit.webp";
+import AnyCommerce from "@/assets/projects/AnyCommerce.webp";
+import AlliensVsBalloons from "@/assets/projects/AlliensVsBalloons.webp";
+import ChatApp from "@/assets/projects/ChatApp.webp";
+
 export const portfolioData = {
     name: "Jerermy Solano",
-    profileImage: "/projects/HeroProfile.webp",
-    aboutImage: "/projects/AboutMe.webp",
+    profileImage: HeroProfile,
+    aboutImage: AboutMe,
     socials: {
         linkedin: "https://www.linkedin.com/in/jerermy-michel-solano-fr%C3%ADas-10ba9b218/",
         github: "https://github.com/JeremyJS20",
@@ -84,7 +91,7 @@ export const portfolioData = {
                 en: "<strong>University project</strong> developed with <strong>agentic IDE and AI (Antigravity)</strong>. A system for complete personal finance control: track daily expenses, manage income sources, and visualize budget trends with intuitive dashboards.",
                 es: "<strong>Proyecto universitario</strong> desarrollado con <strong>IDE agéntico e IA (Antigravity)</strong>. Un sistema de control financiero personal: seguimiento de gastos diarios, gestión de ingresos y visualización de presupuestos con paneles intuitivos."
             },
-            image: "/projects/FinOrbit.webp",
+            image: FinOrbit,
             tags: ["Django", "TailwindCSS", "JavaScript", "PostgreSQL", "AI Assisted"],
             links: {
                 code: "https://github.com/JeremyJS20/PersonalFinanceManagement",
@@ -97,7 +104,7 @@ export const portfolioData = {
                 en: "A dynamic e-commerce marketplace where users can seamlessly buy and sell curated products. Optimized for high performance with a clean, modern interface and robust product management features.",
                 es: "Un marketplace dinámico de comercio electrónico donde los usuarios pueden comprar y vender productos de forma fluida. Optimizado para un alto rendimiento con una interfaz limpia y moderna, y potentes funciones de gestión de productos."
             },
-            image: "/projects/AnyCommerce.webp",
+            image: AnyCommerce,
             tags: ["ECommerce", "ReactJS", "TailwindCSS", "TypeScript", "FastAPI"],
             links: {
                 code: "https://github.com/JeremyJS20/AnyCommerce",
@@ -110,7 +117,7 @@ export const portfolioData = {
                 en: "An engaging web-based arcade game where you command a UFO to protect the atmosphere. Your mission is to prevent ascending balloons from reaching space by popping them with precision and speed.",
                 es: "Un entretenido juego de arcade web donde diriges un OVNI para proteger la atmósfera. Tu misión es evitar que los globos que ascienden lleguen al espacio explotándolos con precisión y velocidad."
             },
-            image: "/projects/AlliensVsBalloons.webp",
+            image: AlliensVsBalloons,
             tags: ["Web Game", "HTML", "JavaScript", "Phaser 3"],
             links: {
                 code: "https://github.com/JeremyJS20/ProyectoAlienVSBalloons",
@@ -123,7 +130,7 @@ export const portfolioData = {
                 en: "A real-time messaging platform designed for seamless communication. Built with a modern tech stack to ensure low-latency interactions and a responsive user experience.",
                 es: "Una plataforma de mensajería en tiempo real diseñada para una comunicación fluida. Construida con un stack moderno para garantizar interacciones de baja latencia y una experiencia de usuario receptiva."
             },
-            image: "/projects/ChatApp.webp",
+            image: ChatApp,
             tags: ["ReactJS", "TypeScript", "Express.js", "MongoDB", "TailwindCSS"],
             links: {
                 code: "https://github.com/JeremyJS20/ReactChatApp2",
@@ -172,4 +179,3 @@ export const portfolioData = {
         }
     ]
 };
-
