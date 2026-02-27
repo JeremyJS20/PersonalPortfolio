@@ -16,13 +16,15 @@ const { summary, aboutImage } = portfolioData;
             >
             </div>
             <div
-                class="relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl"
+                class="relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl image-placeholder"
             >
                 <img
                     src={aboutImage}
                     alt="About Me Portrait"
-                    class="w-full h-auto aspect-[3/4] object-cover hover:scale-105 transition-transform duration-500"
+                    class="w-full h-auto aspect-[3/4] object-cover hover:scale-105 transition-transform duration-500 image-fade-in"
                     loading="lazy"
+                    decoding="async"
+                    onload="this.style.opacity='1'"
                 />
             </div>
         </div>

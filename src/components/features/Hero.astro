@@ -24,14 +24,15 @@ const {
     <div class="flex flex-col items-center gap-6">
         <div class="flex items-center gap-4">
             <div
-                class="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-xl"
+                class="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/20 shadow-xl image-placeholder"
             >
                 <img
-                    class="w-full h-full object-cover [object-position:48%_25%]"
+                    class="w-full h-full object-cover [object-position:48%_25%] image-fade-in"
                     alt={`Professional portrait of ${name}`}
                     src={profileImage}
                     loading="eager"
-                    decoding="async"
+                    decoding="sync"
+                    onload="this.style.opacity='1'"
                 />
             </div>
             <div
