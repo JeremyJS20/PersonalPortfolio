@@ -105,10 +105,10 @@ export const portfolioData = {
                 es: "Un marketplace dinámico de comercio electrónico donde los usuarios pueden comprar y vender productos de forma fluida. Optimizado para un alto rendimiento con una interfaz limpia y moderna, y potentes funciones de gestión de productos."
             },
             image: AnyCommerce,
-            tags: ["ECommerce", "ReactJS", "TailwindCSS", "TypeScript", "FastAPI"],
+            tags: ["ReactJS", "TailwindCSS", "TypeScript", "FastAPI", "Stripe", "AI Assisted"],
             links: {
-                code: "https://github.com/JeremyJS20/AnyCommerce",
-                preview: "https://anycommerce.onrender.com/"
+                code: "https://github.com/JeremyJS20/Anycommerce-Frontend",
+                preview: "https://anycommerce-frontend.vercel.app"
             }
         },
         {
