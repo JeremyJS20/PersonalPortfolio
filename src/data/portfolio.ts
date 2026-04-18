@@ -4,6 +4,8 @@ import FinOrbit from "@/assets/projects/FinOrbit.webp";
 import AnyCommerce from "@/assets/projects/AnyCommerce.webp";
 import AlliensVsBalloons from "@/assets/projects/AlliensVsBalloons.webp";
 import ChatApp from "@/assets/projects/ChatApp.webp";
+import VoteChain from "@/assets/projects/VoteChain.webp";
+
 
 export const portfolioData = {
     name: "Jerermy Solano",
@@ -86,7 +88,21 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "VoteChain",
+            description: {
+                en: "<strong>University project</strong> developed with <strong>agentic IDE and AI (Antigravity)</strong>. An institutional-grade digital voting platform with biometric verification, leveraging blockchain technology for secure, immutable record-keeping.",
+                es: "<strong>Proyecto universitario</strong> desarrollado con <strong>IDE agéntico e IA (Antigravity)</strong>. Una plataforma de votación digital de grado institucional con verificación biométrica, que utiliza tecnología blockchain para un registro seguro e inmutable."
+            },
+            image: VoteChain,
+            tags: ["ReactJS", "TailwindCSS", "TypeScript", "Express.js", "Blockchain", "AI Assisted"],
+            links: {
+                code: "https://github.com/JeremyJS20/votechain",
+                preview: "https://votechain-one.vercel.app"
+            }
+        },
+        {
             title: "FinOrbit",
+
             description: {
                 en: "<strong>University project</strong> developed with <strong>agentic IDE and AI (Antigravity)</strong>. A system for complete personal finance control: track daily expenses, manage income sources, and visualize budget trends with intuitive dashboards.",
                 es: "<strong>Proyecto universitario</strong> desarrollado con <strong>IDE agéntico e IA (Antigravity)</strong>. Un sistema de control financiero personal: seguimiento de gastos diarios, gestión de ingresos y visualización de presupuestos con paneles intuitivos."
