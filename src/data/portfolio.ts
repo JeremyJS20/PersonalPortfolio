@@ -47,8 +47,8 @@ export const portfolioData = {
                 es: "2024 — Presente"
             },
             description: {
-                en: "Maintain and enhance a production Electronic Health Records (EHR) system. Develop backend services using Java (Spring Boot) and Python (Fast API) to support clinical and insurance workflows. Build integration platforms between Medical Centers and Insurance Companies (ARS). Implement serverless solutions using AWS (Lambda, API Gateway, RDS, S3).",
-                es: "Mantener y mejorar un sistema de Registro de Salud Electrónico (EHR) en producción. Desarrollar servicios backend utilizando Java (Spring Boot) y Python (Fast API) para soportar flujos de trabajo clínicos y de seguros. Construir plataformas de integración entre Centros Médicos y Compañías de Seguros (ARS). Implementar soluciones sin servidor utilizando AWS (Lambda, API Gateway, RDS, S3)."
+                en: "At Unipago, I've had the opportunity to work on systems that connect different players across the healthcare ecosystem. From integrations and APIs to cloud solutions, I enjoy solving the kind of problems where reliability, scalability, and real-world impact matter. More recently, I've also explored how AI can enhance identity verification experiences through technologies like AWS Rekognition and Bedrock.",
+                es: "En Unipago, he tenido la oportunidad de trabajar en sistemas que conectan a diferentes actores del ecosistema de la salud. Desde integraciones y APIs hasta soluciones en la nube, disfruto resolviendo el tipo de problemas donde la confiabilidad, la escalabilidad y el impacto en el mundo real importan. Más recientemente, también he explorado cómo la IA puede mejorar las experiencias de verificación de identidad a través de tecnologías como AWS Rekognition y Bedrock."
             },
             featured: true
         },
