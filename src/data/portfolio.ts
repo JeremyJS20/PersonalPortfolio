@@ -5,6 +5,7 @@ import AnyCommerce from "@/assets/projects/AnyCommerce.webp";
 import AlliensVsBalloons from "@/assets/projects/AlliensVsBalloons.webp";
 import ChatApp from "@/assets/projects/ChatApp.webp";
 import VoteChain from "@/assets/projects/VoteChain.webp";
+import FleetVault from "@/assets/projects/FleetVault.webp";
 
 
 export const portfolioData = {
@@ -88,10 +89,23 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "FleetVault",
+            description: {
+                en: "A premium car rental and logistics platform designed for efficient vehicle management, customer bookings, and integrated payment processing.",
+                es: "Una plataforma premium de alquiler de vehículos y logística diseñada para una gestión de flota eficiente, reservas de clientes y procesamiento de pagos integrado."
+            },
+            image: FleetVault,
+            tags: ["ReactJS", "TailwindCSS", "TypeScript", "Express.js", "Prisma", "PostgreSQL", "Stripe", "AI Assisted"],
+            links: {
+                code: "https://github.com/JeremyJS20/FleetVault",
+                preview: "https://fleet-vault-enterprise.vercel.app"
+            }
+        },
+        {
             title: "VoteChain",
             description: {
-                en: "<strong>University project</strong> developed with <strong>agentic IDE and AI (Antigravity)</strong>. An institutional-grade digital voting platform with biometric verification, leveraging blockchain technology for secure, immutable record-keeping.",
-                es: "<strong>Proyecto universitario</strong> desarrollado con <strong>IDE agéntico e IA (Antigravity)</strong>. Una plataforma de votación digital de grado institucional con verificación biométrica, que utiliza tecnología blockchain para un registro seguro e inmutable."
+                en: "An institutional-grade digital voting platform with biometric verification, leveraging blockchain technology for secure, immutable record-keeping.",
+                es: "Una plataforma de votación digital de grado institucional con verificación biométrica, que utiliza tecnología blockchain para un registro seguro e inmutable."
             },
             image: VoteChain,
             tags: ["ReactJS", "TailwindCSS", "TypeScript", "Express.js", "Blockchain", "AI Assisted"],
@@ -104,8 +118,8 @@ export const portfolioData = {
             title: "FinOrbit",
 
             description: {
-                en: "<strong>University project</strong> developed with <strong>agentic IDE and AI (Antigravity)</strong>. A system for complete personal finance control: track daily expenses, manage income sources, and visualize budget trends with intuitive dashboards.",
-                es: "<strong>Proyecto universitario</strong> desarrollado con <strong>IDE agéntico e IA (Antigravity)</strong>. Un sistema de control financiero personal: seguimiento de gastos diarios, gestión de ingresos y visualización de presupuestos con paneles intuitivos."
+                en: "A comprehensive personal finance management system designed to track daily expenses, manage income sources, and visualize budget trends with intuitive dashboards.",
+                es: "Un sistema de control financiero personal para el seguimiento de gastos diarios, gestión de ingresos y visualización de presupuestos con paneles intuitivos."
             },
             image: FinOrbit,
             tags: ["Django", "TailwindCSS", "JavaScript", "PostgreSQL", "AI Assisted"],
