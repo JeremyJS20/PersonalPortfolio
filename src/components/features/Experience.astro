@@ -26,9 +26,10 @@ const { experience } = portfolioData;
                     </span>
                 </div>
                 <p class="text-lg font-medium text-slate-700 dark:text-slate-300">{item.company}</p>
-                <p class="mt-3 text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
-                    {item.description[lang]}
-                </p>
+                <p 
+                    class="mt-3 text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed text-lg"
+                    set:html={item.description[lang]}
+                />
             </div>
         ))}
 

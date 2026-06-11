@@ -78,7 +78,7 @@ html {
 
   strong {
     color: var(--pfm-text-main);
-    font-weight: 600;
+    font-weight: 700;
   }
 
   /* Scroll margin for fixed navbar clearance */
