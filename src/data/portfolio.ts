@@ -19,8 +19,8 @@ export const portfolioData = {
         phone: "+1-829-264-4164"
     },
     roles: {
-        en: "Fullstack Developer",
-        es: "Desarrollador Fullstack"
+        en: "Fullstack Engineer",
+        es: "Ingeniero Fullstack"
     },
     location: {
         en: "located in Santo Domingo, Dominican Republic 🇩🇴",
@@ -38,8 +38,8 @@ export const portfolioData = {
     experience: [
         {
             role: {
-                en: "Fullstack Developer",
-                es: "Desarrollador Fullstack"
+                en: "Fullstack Engineer",
+                es: "Ingeniero Fullstack"
             },
             company: "Unipago",
             period: {
@@ -54,8 +54,8 @@ export const portfolioData = {
         },
         {
             role: {
-                en: "Fullstack Developer",
-                es: "Desarrollador Fullstack"
+                en: "Fullstack Engineer",
+                es: "Ingeniero Fullstack"
             },
             company: "CAM Informática",
             period: {
