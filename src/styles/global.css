@@ -76,6 +76,11 @@ html {
     min-height: 100vh;
   }
 
+  strong {
+    color: var(--pfm-text-main);
+    font-weight: 600;
+  }
+
   /* Scroll margin for fixed navbar clearance */
   section[id] {
     scroll-margin-top: 6rem;
