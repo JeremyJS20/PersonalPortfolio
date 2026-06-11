@@ -43,12 +43,12 @@ export const portfolioData = {
             },
             company: "Unipago",
             period: {
-                en: "2024 — Present",
-                es: "2024 — Presente"
+                en: "Nov 2023 — Present",
+                es: "Nov 2023 — Presente"
             },
             description: {
-                en: "At <strong>Unipago</strong>, I've had the opportunity to work on systems that connect different players across the <strong>healthcare ecosystem</strong>. From <strong>integrations</strong> and <strong>APIs</strong> to <strong>cloud solutions</strong>, I enjoy solving the kind of problems where <strong>reliability</strong>, <strong>scalability</strong>, and real-world impact matter. More recently, I've also explored how <strong>AI</strong> can enhance <strong>identity verification</strong> experiences through technologies like <strong>AWS Rekognition</strong> and <strong>Bedrock</strong>.",
-                es: "En <strong>Unipago</strong>, he tenido la oportunidad de trabajar en sistemas que conectan a diferentes actores del <strong>ecosistema de la salud</strong>. Desde <strong>integraciones</strong> y <strong>APIs</strong> hasta <strong>soluciones en la nube</strong>, disfruto resolviendo el tipo de problemas donde la <strong>confiabilidad</strong>, la <strong>escalabilidad</strong> y el impacto en el mundo real importan. Más recientemente, también he explorado cómo la <strong>IA</strong> puede mejorar las experiencias de <strong>verificación de identidad</strong> a través de tecnologías como <strong>AWS Rekognition</strong> y <strong>Bedrock</strong>."
+                en: "At <strong>Unipago</strong>, I've had the opportunity to work on systems that support critical <strong>healthcare operations</strong> and connect different organizations across the <strong>healthcare ecosystem</strong>. From <strong>integrations</strong> and <strong>APIs</strong> to <strong>cloud-based solutions</strong>, I enjoy solving problems where <strong>reliability</strong>, <strong>scalability</strong>, and real-world impact matter. More recently, I've also been involved in <strong>identity verification</strong> initiatives, exploring how <strong>AWS services</strong> and <strong>AI</strong> can be used to create secure and seamless experiences.",
+                es: "En <strong>Unipago</strong>, he tenido la oportunidad de trabajar en sistemas que soportan <strong>operaciones críticas de salud</strong> y conectan a diferentes organizaciones de todo el <strong>ecosistema de la salud</strong>. Desde <strong>integraciones</strong> y <strong>APIs</strong> hasta <strong>soluciones basadas en la nube</strong>, disfruto resolviendo problemas donde la <strong>confiabilidad</strong>, la <strong>escalabilidad</strong> y el impacto en el mundo real importan. Más recientemente, también he estado involucrado en iniciativas de <strong>verificación de identidad</strong>, explorando cómo se pueden usar los <strong>servicios de AWS</strong> y la <strong>IA</strong> para crear experiencias seguras y fluidas."
             },
             featured: true
         },
@@ -59,12 +59,12 @@ export const portfolioData = {
             },
             company: "CAM Informática",
             period: {
-                en: "2022 — 2024",
-                es: "2022 — 2024"
+                en: "Feb 2022 — Nov 2023",
+                es: "Feb 2022 — Nov 2023"
             },
             description: {
-                en: "My first professional experience gave me the opportunity to contribute to the development of a <strong>Human Resource Management System (HRMS)</strong>. It was where I strengthened my foundations as a <strong>full-stack engineer</strong>, building features across both <strong>frontend</strong> and <strong>backend</strong> while collaborating closely with the team to translate requirements into reliable solutions. It also taught me the importance of <strong>maintainability</strong>, <strong>teamwork</strong>, and how software evolves in real <strong>production environments</strong>.",
-                es: "Mi primera experiencia profesional me dio la oportunidad de contribuir al desarrollo de un <strong>Sistema de Gestión de Recursos Humanos (HRMS)</strong>. Fue donde fortalecí mis bases como <strong>ingeniero full-stack</strong>, construyendo funcionalidades tanto en el <strong>frontend</strong> como en el <strong>backend</strong> mientras colaboraba estrechamente con el equipo para traducir los requisitos en soluciones confiables. También me enseñó la importancia de la <strong>mantenibilidad</strong>, el <strong>trabajo en equipo</strong> y cómo evoluciona el software en <strong>entornos de producción</strong> reales."
+                en: "My first professional experience gave me the opportunity to contribute to the development of a <strong>Human Resource Management System (HRMS)</strong>. It was where I strengthened my foundations as a <strong>full-stack engineer</strong>, building features across the stack and learning how software evolves in real <strong>production environments</strong> through <strong>collaboration</strong> and <strong>continuous improvement</strong>.",
+                es: "Mi primera experiencia profesional me dio la oportunidad de contribuir al desarrollo de un <strong>Sistema de Gestión de Recursos Humanos (HRMS)</strong>. Fue donde fortalecí mis bases como <strong>ingeniero full-stack</strong>, construyendo funcionalidades en todo el stack y aprendiendo cómo evoluciona el software en <strong>entornos de producción</strong> reales a través de la <strong>colaboración</strong> y la <strong>mejora continua</strong>."
             },
             featured: false
         }
