@@ -63,8 +63,8 @@ export const portfolioData = {
                 es: "2022 — 2024"
             },
             description: {
-                en: "Contributed to the development of a Human Resource Management System (HRMS). Developed frontend components using React and TypeScript. Implemented backend functionality using .NET (C#) and SQL Server. Collaborated on requirements analysis and system stability improvements.",
-                es: "Contribuí al desarrollo de un Sistema de Gestión de Recursos Humanos (HRMS). Desarrollé componentes frontend utilizando React y TypeScript. Implementé funcionalidad backend utilizando .NET (C#) y SQL Server. Colaboré en el análisis de requisitos y mejoras en la estabilidad del sistema."
+                en: "My first professional experience gave me the opportunity to contribute to the development of a <strong>Human Resource Management System (HRMS)</strong>. It was where I strengthened my foundations as a <strong>full-stack engineer</strong>, building features across both <strong>frontend</strong> and <strong>backend</strong> while collaborating closely with the team to translate requirements into reliable solutions. It also taught me the importance of <strong>maintainability</strong>, <strong>teamwork</strong>, and how software evolves in real <strong>production environments</strong>.",
+                es: "Mi primera experiencia profesional me dio la oportunidad de contribuir al desarrollo de un <strong>Sistema de Gestión de Recursos Humanos (HRMS)</strong>. Fue donde fortalecí mis bases como <strong>ingeniero full-stack</strong>, construyendo funcionalidades tanto en el <strong>frontend</strong> como en el <strong>backend</strong> mientras colaboraba estrechamente con el equipo para traducir los requisitos en soluciones confiables. También me enseñó la importancia de la <strong>mantenibilidad</strong>, el <strong>trabajo en equipo</strong> y cómo evoluciona el software en <strong>entornos de producción</strong> reales."
             },
             featured: false
         }
