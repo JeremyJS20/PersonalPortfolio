@@ -3,7 +3,7 @@ import AboutMe from "@/assets/projects/AboutMe.webp";
 import FinOrbit from "@/assets/projects/FinOrbit.webp";
 import AnyCommerce from "@/assets/projects/AnyCommerce.webp";
 import AlliensVsBalloons from "@/assets/projects/AlliensVsBalloons.webp";
-import ChatApp from "@/assets/projects/ChatApp.webp";
+
 import VoteChain from "@/assets/projects/VoteChain.webp";
 import FleetVault from "@/assets/projects/FleetVault.webp";
 
@@ -152,19 +152,6 @@ export const portfolioData = {
             links: {
                 code: "https://github.com/JeremyJS20/ProyectoAlienVSBalloons",
                 preview: "https://aliens-vs-balloons.onrender.com"
-            }
-        },
-        {
-            title: "ChatApp",
-            description: {
-                en: "A real-time messaging platform designed for seamless communication. Built with a modern tech stack to ensure low-latency interactions and a responsive user experience.",
-                es: "Una plataforma de mensajería en tiempo real diseñada para una comunicación fluida. Construida con un stack moderno para garantizar interacciones de baja latencia y una experiencia de usuario receptiva."
-            },
-            image: ChatApp,
-            tags: ["ReactJS", "TypeScript", "Express.js", "MongoDB", "TailwindCSS"],
-            links: {
-                code: "https://github.com/JeremyJS20/ReactChatApp2",
-                preview: "https://react-chat-app-6vjz.onrender.com"
             }
         }
     ],
